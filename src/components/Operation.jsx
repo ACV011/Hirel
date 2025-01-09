@@ -33,7 +33,7 @@ function Operation({ isOpen, onRequestClose }) {
     } else {
       console.error("User ID is not available.");
     }
-  }, [userId]);
+  }, [userId, fetchUserName]);
 
   useEffect(() => {
     let interval;
@@ -158,11 +158,11 @@ function Operation({ isOpen, onRequestClose }) {
     setSelectedOption(activityType);
   };
 
-  const handleCloseModal = () => {
-    setSelectedOption(null);
-    setStartTime(null);
-    setBarcodeCounts({});
-  };
+  // const handleCloseModal = () => {
+  //   setSelectedOption(null);
+  //   setStartTime(null);
+  //   setBarcodeCounts({});
+  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
