@@ -34,6 +34,7 @@ function Operation({ isOpen, onRequestClose }) {
       console.error("User ID is not available.");
     }
   }, [userId, fetchUserName]);
+  
 
   useEffect(() => {
     let interval;
@@ -77,7 +78,7 @@ function Operation({ isOpen, onRequestClose }) {
     }
   }, [scanCount, elapsedTime]);
 
-  const fetchUserName = async () => {
+  const fetchUserName = useCallback(async () => {
     setLoading(true);
     try {
       const response = await axios.get(`http://192.168.1.172:5000/users/${userId}`);
@@ -88,7 +89,8 @@ function Operation({ isOpen, onRequestClose }) {
     } finally {
       setLoading(false);
     }
-  };
+  }, [userId]); // Dependency on `userId`
+  
 
   const fetchActivities = async (userName) => {
     setLoading(true);
