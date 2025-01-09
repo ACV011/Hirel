@@ -89,7 +89,7 @@ function Operation({ isOpen, onRequestClose }) {
     } finally {
       setLoading(false);
     }
-  }, [userId]); // Dependency on `userId`
+  }, [userId]); 
   
 
   const fetchActivities = async (userName) => {
