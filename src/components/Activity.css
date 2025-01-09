@@ -1,0 +1,92 @@
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.activity-page {
+  padding: 10px;
+}
+
+.activity-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.activity-table th, .activity-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.activity-table th {
+  background-color: #f1f1f1;
+
+  
+}
+
+.btn-new-activity {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_content {
+  background-color: rgb(224, 217, 217);
+  padding: 20px;
+  border-radius: 4px;
+  width: 300px;
+  
+  
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.btn-save, .btn-cancel {
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.btn-save {
+  background-color: #4CAF50;
+
+  color: white;
+}
+
+.btn-cancel {
+  background-color: rgba(219,39,39,255);
+  color: white;
+}
